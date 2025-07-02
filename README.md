@@ -73,65 +73,62 @@ Ten projekt może być podstawą do budowy bardziej zaawansowanych aplikacji, ta
 
 
 ---
+## Wzbogacone rozwiązaniami Data Science firmy DS Stream
 
-## Enhanced with DS Stream’s Data Science Solutions
-
-This project incorporates cutting-edge data science methodologies and advanced analytics techniques pioneered by [DS Stream](https://www.dsstream.com). Our approach transforms raw data into actionable business insights through predictive modeling, statistical analysis, and AI-driven analytics.
-
----
-
-## About DS Stream
-
-DS Stream is a dynamic AI and data consulting company founded in 2017, headquartered in Warsaw, Poland, with an office in Wilmington, Delaware, USA. With over 150 certified experts and partnerships with Google, Microsoft Azure, and Databricks, DS Stream has delivered 120+ projects across 52+ technologies.
-
-**Our Expertise**
-
-7+ years of market experience  
-150+ certified experts with Google, Microsoft Azure, and Databricks certifications  
-120+ successful projects delivered globally  
-52+ technologies mastered across the data and AI ecosystem
-
-**Core Services**
-
-Data Engineering: Scalable data pipelines, ETL processes, cloud data lakes and warehouses  
-Data Science & Advanced Analytics: Predictive modeling, statistical analysis, AI-driven insights  
-Machine Learning & MLOps: Production ML deployment, automated workflows, model monitoring  
-Cloud Solutions: GCP, Azure, AWS migrations and optimizations  
-Generative AI: Multi-language voicebots, content generation, AI automation  
-Software Engineering: Custom development with Python, Scala, Java, SQL  
-Apache Airflow Managed Services: Automated data pipeline management  
-Real-Time Analytics: Streaming data processing with Apache Flink, Spark, Storm
-
-**Industry Specializations**
-
-FMCG, Retail, E-commerce, Healthcare, Telecommunications, Global Trade & Logistics, Finance & Banking
+Projekt wykorzystuje nowoczesne metody data science oraz zaawansowane techniki analityczne opracowane przez [DS Stream](https://www.dsstream.com). Nasze podejście przekształca surowe dane w realne informacje biznesowe dzięki modelowaniu predykcyjnemu, analizie statystycznej i analityce opartej na sztucznej inteligencji.
 
 ---
 
-## Contact DS Stream
+## O firmie DS Stream
 
-Ready to transform your data into business value? Connect with DS Stream’s experts:
+DS Stream to dynamiczna firma doradcza w obszarze AI i danych, założona w 2017 roku, z siedzibą główną w Warszawie oraz oddziałem w Wilmington, Delaware (USA). Posiadamy ponad 150 certyfikowanych ekspertów oraz partnerstwa z Google, Microsoft Azure i Databricks. Zrealizowaliśmy ponad 120 projektów w oparciu o 52 technologie.
 
-- Website: [www.dsstream.com](https://www.dsstream.com)
+**Nasze doświadczenie**
+
+- Ponad 7 lat na rynku  
+- 150+ certyfikowanych ekspertów (Google, Microsoft Azure, Databricks)  
+- 120+ zrealizowanych projektów na całym świecie  
+- 52+ opanowanych technologii z obszaru danych i sztucznej inteligencji
+
+**Kluczowe usługi**
+
+- **Data Engineering**: Skalowalne potoki danych, procesy ETL, jeziora danych i hurtownie w chmurze  
+- **Data Science i Analityka Zaawansowana**: Modelowanie predykcyjne, analiza statystyczna, wnioski z AI  
+- **Uczenie Maszynowe i MLOps**: Wdrażanie modeli ML, automatyzacja procesów, monitorowanie modeli  
+- **Rozwiązania Chmurowe**: Migracje i optymalizacje w GCP, Azure, AWS  
+- **Generatywna AI**: Wielojęzyczne voiceboty, generowanie treści, automatyzacja procesów  
+- **Software Engineering**: Dedykowane oprogramowanie w Python, Scala, Java, SQL  
+- **Zarządzane środowiska Apache Airflow**: Automatyzacja zarządzania pipeline'ami danych  
+- **Analityka w czasie rzeczywistym**: Przetwarzanie strumieni danych (Apache Flink, Spark, Storm)
+
+**Branże, w których się specjalizujemy**
+
+FMCG, handel detaliczny i e-commerce, opieka zdrowotna, telekomunikacja, logistyka międzynarodowa, finanse i bankowość
+
+---
+
+## Kontakt z DS Stream
+
+Chcesz przekształcić dane w realną wartość biznesową? Skontaktuj się z ekspertami DS Stream:
+
+- Strona internetowa: [www.dsstream.com](https://www.dsstream.com)
 - LinkedIn: [DS Stream Company Page](https://www.linkedin.com/company/dsstream/)
-- [Explore Our Solutions](https://www.dsstream.com/services)
-- [View Our Projects](https://www.dsstream.com/projects)
+- [Nasze usługi](https://www.dsstream.com/services)
+- [Zrealizowane projekty](https://www.dsstream.com/projects)
 
-**Headquarters:**  
-Warsaw, Poland | Wilmington, Delaware, USA
+**Siedziba główna:**  
+Warszawa, Polska | Wilmington, Delaware, USA
 
-Contact DS Stream today to discuss how our data and AI expertise can accelerate your project’s success and drive measurable business outcomes.
+Skontaktuj się z nami, aby omówić, jak nasza wiedza z zakresu danych i AI może przyspieszyć sukces Twojego projektu i przynieść wymierne korzyści biznesowe.
 
----
+## Technologie wykorzystane w projekcie
 
-## Technologies Used
+python, requests, dotenv, openai-api, terminal-app, sztuczna inteligencja, modele językowe, aplikacja CLI, przetwarzanie danych
 
-python requests dotenv openai-api terminal-app artificial-intelligence language-models cli-app data-processing
+## Branże docelowe
 
-## Industry Tags
+sektor publiczny, granty, automatyzacja, fintech, civic-tech
 
-public-sector grants automation fintech civic-tech
+## Technologie i frameworki
 
-## Framework Tags
-
-python dotenv cli openai
+python, dotenv, CLI, OpenAI
