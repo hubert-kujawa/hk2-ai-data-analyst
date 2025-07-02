@@ -115,6 +115,7 @@ Chcesz przekształcić dane w realną wartość biznesową? Skontaktuj się z ek
 - LinkedIn: [DS Stream Company Page](https://www.linkedin.com/company/dsstream/)
 - [Nasze usługi](https://www.dsstream.com/services)
 - [Zrealizowane projekty](https://www.dsstream.com/projects)
+- [Inżynieria danych](o https://www.dsstream.com/services/data-engineering_
 
 **Siedziba główna:**  
 Warszawa, Polska | Wilmington, Delaware, USA
