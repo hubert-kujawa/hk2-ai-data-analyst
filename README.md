@@ -21,7 +21,7 @@ Prosty i bezpieczny projekt w Pythonie, umożliwiający łączenie się z [OpenA
 
 1. Sklonuj repozytorium:
    ```
-   git clone <url-repozytorium>
+   git clone https://github.com/andrzejga1/openai-cli-app.git
    cd grant-system
    ```
 2. Zainstaluj zależności:
