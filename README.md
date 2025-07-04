@@ -1,72 +1,75 @@
-# Aplikacja Python do komunikacji z OpenAI API
+# Konsola Python do interakcji z OpenAI API
 
-Prosty i bezpieczny projekt w Pythonie, umożliwiający łączenie się z [OpenAI API](https://platform.openai.com/) i wysyłanie zapytań do modelu językowego (LLM). Aplikacja wspiera środowisko `.env` do bezpiecznego przechowywania klucza API.
+To prosty i bezpieczny projekt w Pythonie, który pozwala na komunikację z [OpenAI API](https://platform.openai.com/) i przesyłanie zapytań do modeli językowych. Aplikacja wykorzystuje plik `.env` do ochrony Twojego klucza API.
 
-## Funkcje aplikacji
+## Co potrafi aplikacja?
 
-- Interfejs w terminalu do komunikacji z AI (np. ChatGPT)  
-- Wykorzystanie pliku `.env` do bezpiecznego przechowywania klucza API  
-- Integracja z OpenAI Chat Completions API  
-- Możliwość zadania pytania i uzyskania odpowiedzi  
-- Lista zależności w `requirements.txt` dla łatwej instalacji  
-- Możliwość dalszej rozbudowy jako baza pod większe systemy  
+- Terminalowy interfejs do zadawania pytań i otrzymywania odpowiedzi od AI (np. ChatGPT)  
+- Zarządzanie kluczem API za pomocą pliku `.env`  
+- Wykorzystanie OpenAI Chat Completion API do generowania odpowiedzi  
+- Obsługa pojedynczych zapytań z natychmiastową odpowiedzią  
+- Wygodna instalacja dzięki listy bibliotek w `requirements.txt`  
+- Elastyczna baza do dalszego rozwoju i integracji w większe projekty  
 
-## Technologie
+## Technologie i narzędzia
 
 - Python 3.x  
 - OpenAI API  
-- Biblioteki: `openai`, `python-dotenv`  
+- Kluczowe biblioteki: `openai`, `python-dotenv`  
 
-## Instalacja i konfiguracja
+## Jak zainstalować i uruchomić?
 
 1. Sklonuj repozytorium:
    ```bash
-   git clone https://github.com/hubert-kujawa/hk2-ai-data-analyst.git
-   cd hk2-ai-data-analyst
+   git clone https://github.com/mkarasds/ds-ai-data-analyst.git
+   cd ds-ai-data-analyst
    ```
-2. Zainstaluj zależności:
+2. Zainstaluj niezbędne pakiety:
    ```bash
    pip install -r requirements.txt
    ```
-3. Załóż konto na platformie OpenAI:
-   - Odwiedź: https://platform.openai.com/signup  
-   - Ustaw metodę płatności i limity  
-4. Uzyskaj klucz API:
-   - Przejdź do: https://platform.openai.com/api-keys  
+3. Załóż konto na platformie OpenAI, jeśli jeszcze tego nie zrobiłeś:
+   - Odwiedź https://platform.openai.com/signup  
+   - Skonfiguruj sposób płatności i limity wykorzystania  
+4. Uzyskaj swój klucz API:
+   - Przejdź do https://platform.openai.com/api-keys  
    - Wygeneruj nowy klucz i skopiuj go  
-5. Utwórz plik `.env` w katalogu projektu i wpisz:
+5. Stwórz plik `.env` w katalogu projektu i dodaj do niego:
    ```
    OPENAI_API_KEY=twój_klucz_api
    ```
-   **Uwaga:** Plik `.env` powinien być dodany do `.gitignore` — nie udostępniaj swojego klucza publicznie!  
+   Pamiętaj, aby nie udostępniać pliku `.env` publicznie i umieścić go w `.gitignore`.  
 6. Uruchom aplikację:
    ```bash
    python app.py
    ```
-7. Zadawaj pytania w terminalu i odbieraj odpowiedzi AI. Aby zakończyć, wpisz `exit`.  
+7. Wpisuj pytania w terminalu i odbieraj odpowiedzi. Wpisz `exit`, by zakończyć program.
 
-## Struktura projektu
+## Układ katalogów i plików
 
-| Nazwa pliku/folderu | Opis                                                  |
-|---------------------|-------------------------------------------------------|
-| `.env`              | Plik z prywatnym kluczem API OpenAI                    |
-| `app.py`            | Główna aplikacja komunikująca się z OpenAI API         |
-| `requirements.txt`  | Lista wymaganych bibliotek Python                      |
+| Element             | Opis                                            |
+|---------------------|-------------------------------------------------|
+| `.env`              | Plik konfiguracyjny zawierający klucz API       |
+| `app.py`            | Główna aplikacja obsługująca komunikację z AI   |
+| `requirements.txt`  | Lista niezbędnych bibliotek Python               |
 
-## O projekcie
+## Informacje o projekcie
 
-Ten projekt stanowi prostą bazę do tworzenia rozbudowanych aplikacji AI, takich jak:  
-- Chatboty i asystenci głosowi  
-- Automatyczne generowanie i korekta dokumentów  
-- Narzędzia wspierające obsługę klienta  
-- Rozwiązania AI w sektorze publicznym i prywatnym  
+Projekt jest fundamentem do tworzenia rozbudowanych rozwiązań AI, takich jak:  
+- Inteligentne chatboty i asystenci głosowi  
+- Automatyczne generowanie, analiza i korekta tekstów  
+- Systemy wspierające obsługę klienta i procesy biznesowe  
+- Zastosowania AI w sektorze publicznym oraz prywatnym  
 
-## Tagi
+## Tagowanie
 
 `python`, `openai`, `cli`, `dotenv`, `ai`, `chatbot`, `automation`, `data-science`, `language-models`
 
 ---
 
+`python`, `openai`, `cli`, `dotenv`, `ai`, `chatbot`, `automation`, `data-science`, `language-models`
+
+---
 
 ---
 ## Wzbogacone rozwiązaniami Data Science firmy DS Stream

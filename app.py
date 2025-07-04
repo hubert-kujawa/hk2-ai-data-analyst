@@ -7,36 +7,36 @@ load_dotenv()
 api_key = os.getenv("OPENAI_API_KEY")
 
 if not api_key:
-    print("Błąd: Brak klucza OPENAI_API_KEY w zmiennych środowiskowych.")
+    print("Błąd: Nie znaleziono klucza OPENAI_API_KEY w środowisku.")
     sys.exit(1)
 
 client = OpenAI(api_key=api_key)
 
-def ask_ai(question):
+def zapytaj_model(pytanie):
     try:
-        response = client.chat.completions.create(
+        odpowiedz = client.chat.completions.create(
             model="gpt-3.5-turbo",
             messages=[
                 {"role": "system", "content": "Jesteś pomocnym asystentem AI."},
-                {"role": "user", "content": question}
+                {"role": "user", "content": pytanie}
             ]
         )
-        return response.choices[0].message.content
+        return odpowiedz.choices[0].message.content
     except Exception as e:
-        print(f"Błąd podczas wywołania API: {e}")
+        print(f"Błąd API: {e}")
         sys.exit(1)
 
 def main():
     print("Witaj! Zadaj pytanie lub wpisz 'exit', aby zakończyć.")
     while True:
-        question = input("\nTwoje pytanie: ").strip()
-        if question.lower() in ("exit", "quit", "q"):
+        pytanie = input("\nTwoje pytanie: ").strip()
+        if pytanie.lower() in ("exit", "quit", "q"):
             print("Do zobaczenia!")
             break
 
-        answer = ask_ai(question)
+        odpowiedz = zapytaj_model(pytanie)
         print("\n--- Odpowiedź AI ---")
-        print(answer)
+        print(odpowiedz)
 
 if __name__ == "__main__":
     main()
