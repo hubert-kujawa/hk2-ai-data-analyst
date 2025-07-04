@@ -1,37 +1,43 @@
 import os
-import requests
+import sys
+from openai import OpenAI
 from dotenv import load_dotenv
 
-# Load API key from .env
+# Załaduj klucz API z pliku .env
 load_dotenv()
-API_KEY = os.getenv("OPENAI_API_KEY")
+api_key = os.getenv("OPENAI_API_KEY")
 
-if not API_KEY:
-    raise ValueError("OPENAI_API_KEY not found in .env")
+if not api_key:
+    print("Błąd: Klucz OPENAI_API_KEY nie został znaleziony w zmiennych środowiskowych.")
+    sys.exit(1)
 
-API_URL = "https://api.openai.com/v1/chat/completions"
+client = OpenAI(api_key=api_key)
 
-headers = {
-    "Authorization": f"Bearer {API_KEY}",
-    "Content-Type": "application/json"
-}
+def zapytaj_ai(pytanie):
+    try:
+        odpowiedz = client.chat.completions.create(
+            model="gpt-3.5-turbo",
+            messages=[
+                {"role": "system", "content": "Jesteś pomocnym asystentem AI odpowiadającym na pytania."},
+                {"role": "user", "content": pytanie}
+            ]
+        )
+        return odpowiedz.choices[0].message.content
+    except Exception as e:
+        print(f"Błąd podczas komunikacji z API OpenAI: {e}")
+        sys.exit(1)
 
-def ask_openai(question):
-    data = {
-        "model": "gpt-3.5-turbo",
-        "messages": [
-            {"role": "user", "content": question}
-        ]
-    }
+def main():
+    print("Witaj! Wpisz pytanie, na które chcesz uzyskać odpowiedź. Aby zakończyć, wpisz 'exit'.")
+    while True:
+        pytanie = input("\nTwoje pytanie: ").strip()
+        if pytanie.lower() in ("exit", "quit", "q"):
+            print("Koniec działania programu. Do zobaczenia!")
+            break
 
-    response = requests.post(API_URL, headers=headers, json=data)
-    
-    if response.status_code == 200:
-        return response.json()["choices"][0]["message"]["content"]
-    else:
-        raise Exception(f"Request failed: {response.status_code}\n{response.text}")
+        wynik = zapytaj_ai(pytanie)
+        print("\n--- Odpowiedź AI ---")
+        print(wynik)
 
 if __name__ == "__main__":
-    user_input = input("Zadaj Pytanie: ")
-    answer = ask_openai(user_input)
-    print("\nAI odpowiada:", answer)
+    main()
